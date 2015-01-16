@@ -1,0 +1,29 @@
+#textures {
+  .blueprint {
+    @B: #269;
+    @W: white;
+    @T: transparent;
+    background-color: @B;
+    background-image: linear-gradient(@W 2px, @T 2px),
+                      linear-gradient(90deg, @W 2px, @T 2px),
+                      linear-gradient(fade(@W,.3) 1px, @T 1px),
+                      linear-gradient(90deg, fade(@W,.3) 1px, @T 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px
+  }
+  .seigaiha {
+    @B: hsl(0, 0%, 90%);
+    @W: hsl(0, 0%, 95%);
+    @T: transparent;
+    background-color: @B;
+    background-image: radial-gradient(circle at 100% 150%, @B 24%, @W 25%, @W 29%, @B 29%, @B 36%, @W 36%, @W 40%, @T 40%, @T),
+                      radial-gradient(circle at    0 150%, @B 24%, @W 25%, @W 28%, @B 29%, @B 36%, @W 36%, @W 40%, @T 40%, @T),
+                      radial-gradient(circle at  50% 100%, @W 10%, @B 11%, @B 23%, @W 24%, @W 30%, @B 31%, @B 43%, @W 44%, @W 50%,
+                                                           @B 51%, @B 63%, @W 64%, @W 71%, @T 71%, @T),
+                      radial-gradient(circle at 100%  50%, @W 5%,  @B 6%,  @B 15%, @W 16%, @W 20%, @B 21%, @B 30%, @W 31%, @W 35%,
+                                                           @B 36%, @B 45%, @W 46%, @W 49%, @T 50%, @T),
+                      radial-gradient(circle at    0  50%, @W 5%,  @B 6%,  @B 15%, @W 16%, @W 20%, @B 21%, @B 30%, @W 31%, @W 35%,
+                                                           @B 36%, @B 45%, @W 46%, @W 49%, @T 50%, @T);
+    background-size: 50px 25px;
+  }
+}

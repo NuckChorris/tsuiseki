@@ -1,0 +1,14 @@
+<nav class="header">
+  {{#link-modal "create-story" class="button" id="btn-modal-create"}}
+    <span class="mega-octicon octicon-plus"></span>
+  {{/link-modal}}
+  {{#link-to "stories" class="button" id="btn-view-stories"}}
+    <span class="mega-octicon octicon-list-unordered"></span>
+  {{/link-to}}
+  {{#link-to "charts" class="button" id="btn-view-charts"}}
+    <span class="mega-octicon octicon-pulse"></span>
+  {{/link-to}}
+  <a class="button avatar" {{action "openUserMenu"}}>
+    <img {{bind-attr src=controllers.currentUser.model.avatar}} />
+  </a>
+</nav>

@@ -1,0 +1,33 @@
+nav.header {
+  display: flex;
+  width: 50px;
+  height: 100vH;
+  padding: 5px;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: @navy;
+
+  .button {
+    background-color: @darkNavy;
+    color: darken(@darkEggshell, 15%);
+    transition: @shortTransition;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-top: 5px;
+
+    &:hover {
+      background-color: @darkerNavy;
+      color: white;
+    }
+  }
+  .avatar {
+    margin-top: auto;
+    height: 40px;
+    width: 40px;
+    img {
+      border-radius: 2px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
